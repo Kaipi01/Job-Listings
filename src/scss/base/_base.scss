@@ -8,12 +8,10 @@
 }
 
 body {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
     min-height: 100vh;
+    padding-bottom: 40px;
     background-color: $Light-Grayish-Cyan-Bg;
+    color: $Desaturated-Dark-Cyan;
     font-family: $Font-Family;
     font-size: $Font-size;
-    color: $Desaturated-Dark-Cyan;
 }
