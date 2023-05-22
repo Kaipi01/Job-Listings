@@ -2,192 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="../dist/main.css">
+  <script defer src="./js/main.js"></script>
   <title>Frontend Mentor | Job Listings</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  <!-- Item Start -->
-  Photosnap
-  New!
-  Featured
-  Senior Frontend Developer
-  1d ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Senior
-  <!-- Languages -->
-  HTML
-  CSS
-  JavaScript
-  <!-- Item End -->
+  <header class="header">
+    <h1 class="visually-hide">Job Listings</h1>
+  </header>
 
-  <!-- Item Start -->
-  Manage
-  New!
-  Featured
-  Fullstack Developer
-  1d ago
-  Part Time
-  Remote
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  Python
-  <!-- Tools -->
-  React
-  <!-- Item End -->
+  <main class="content">
 
-  <!-- Item Start -->
-  Account
-  New!
-  Junior Frontend Developer
-  2d ago
-  Part Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
+    <section class="filters">
+      <h2 class="visually-hide">Filter a job</h2>
+      <div class="filters__active">
 
-  <!-- Item Start -->
-  MyHome
-  Junior Frontend Developer
-  5d ago
-  Contract
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  CSS
-  JavaScript
-  <!-- Item End -->
+        <div class="filters__category">
+          <p class="filters__category-name">Frontend</p>
+          <button class="filters__category-remove">
+            <span class="visually-hide">Remove this filter</span>
+            <img class="filters__category-remove-icon" src="./images/icon-remove.svg" alt="X" aria-hidden="true">
+          </button>
+        </div>
 
-  <!-- Item Start -->
-  Loop Studios
-  Software Engineer
-  1w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Ruby
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
+        <div class="filters__category">
+          <p class="filters__category-name">CSS</p>
+          <button class="filters__category-remove">
+            <span class="visually-hide">Remove this filter</span>
+            <img class="filters__category-remove-icon" src="./images/icon-remove.svg" alt="X" aria-hidden="true">
+          </button>
+        </div>
 
-  <!-- Item Start -->
-  FaceIt
-  Junior Backend Developer
-  2w ago
-  Full Time
-  UK only
-  <!-- Role -->
-  Backend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  Ruby
-  <!-- Tools -->
-  RoR
-  <!-- Item End -->
+        <div class="filters__category">
+          <p class="filters__category-name">JavaScript</p>
+          <button class="filters__category-remove">
+            <span class="visually-hide">Remove this filter</span>
+            <img class="filters__category-remove-icon" src="./images/icon-remove.svg" alt="X" aria-hidden="true">
+          </button>
+        </div>
 
-  <!-- Item Start -->
-  Shortly
-  Junior Developer
-  2w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  HTML
-  JavaScript
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
+      </div>
+      <button class="filters__clear">Clear</button>
+    </section>
 
-  <!-- Item Start -->
-  Insure
-  Junior Frontend Developer
-  2w ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  Vue
-  Sass
-  <!-- Item End -->
+    <article class="job">
+      <div class="job__content">
+        <img class="job__logo" src="./images/photosnap.svg" alt="photosnap logo">
+        <div class="job__info">
 
-  <!-- Item Start -->
-  Eyecam Co.
-  Full Stack Engineer
-  3w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Python
-  <!-- Tools -->
-  Django
-  <!-- Item End -->
+          <div class="job__header">
+            <a class="job__company-name" href="#">Photosnap</a>
+            <span class="job__tag">NEW!</section>
+            <span class="job__tag job__tag--dark">FEATURED</span>
+          </div>
 
-  <!-- Item Start -->
-  The Air Filter Company
-  Front-end Dev
-  1mo ago
-  Part Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          <h2 class="job__position">
+            <a class="job__position-link" href="#">Senior Frontend Developer</a>
+          </h2>
+
+          <ul class="job__info-list">
+            <li class="job__info-list-item">1d ago</li>
+            <li class="job__info-list-item">Full Time</li>
+            <li class="job__info-list-item">USA only</li>
+          </ul>
+        </div> 
+      </div>
+
+      <div class="job__categories">
+        <button class="job__categories-btn">Frontend</button>
+        <button class="job__categories-btn">Senior</button>
+        <button class="job__categories-btn">HTML</button>
+        <button class="job__categories-btn">CSS</button>
+        <button class="job__categories-btn">JavaScript</button>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="job__content">
+        <img class="job__logo" src="./images/myhome.svg" alt="myhome logo">
+        <div class="job__info">
+
+          <div class="job__header">
+            <a class="job__company-name" href="#">MyHome</a>
+          </div>
+
+          <h2 class="job__position">
+            <a class="job__position-link" href="#">Junior Frontend Developer</a>
+          </h2>
+
+          <ul class="job__info-list">
+            <li class="job__info-list-item">5d ago</li>
+            <li class="job__info-list-item">Contract</li>
+            <li class="job__info-list-item">USA only</li>
+          </ul>
+        </div> 
+      </div>
+
+      <div class="job__categories">
+        <button class="job__categories-btn">Frontend</button>
+        <button class="job__categories-btn">Junior</button>
+        <button class="job__categories-btn">CSS</button>
+        <button class="job__categories-btn">JavaScript</button>
+      </div>
+    </article>
+
+  </main>
 </body>
 </html>
