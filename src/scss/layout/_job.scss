@@ -1,0 +1,116 @@
+@use "../utils/variables" as *;
+@use "../utils/flex-center" as *;
+@use "../utils/btn-reset" as *;
+
+.job {
+  @extend %flex-center;
+  position: relative;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 35px 40px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: $White;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    transform: translateX(-4px);
+    transition: 0.3s;
+    background-color: $Desaturated-Dark-Cyan;
+  }
+
+  &:hover {
+    &::after {
+      transform: translateX(0px);
+    }
+  }
+
+  &__logo {
+    max-width: 88px;
+  }
+
+  &__tag {
+    padding: 5px 10px;
+    padding-top: 8px;
+    border-radius: 20px;
+    background-color: $Desaturated-Dark-Cyan;
+    color: $White;
+    font-size: 0.85rem;
+
+    &--dark {
+        margin-left: 5px;
+        background-color: $Very-Dark-Grayish-Cyan;
+    }
+  }
+
+  &__company-name {
+    padding-right: 10px;
+    color: $Desaturated-Dark-Cyan;
+    font-size: 1.1rem;
+    font-weight: $Font-Bold;
+    text-decoration: none;
+  }
+
+  &__position-link {
+    transition: 0.3s;
+    color: $Very-Dark-Grayish-Cyan;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $Desaturated-Dark-Cyan;
+    }
+  }
+
+  &__content {
+    @extend %flex-center;
+    gap: 25px;
+  }
+
+  &__info {
+    @extend %flex-center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+
+    &-list {
+      @extend %flex-center;
+      gap: 25px;
+
+      &-item:first-child {
+        list-style: none;
+      }
+    }
+  }
+
+  &__categories {
+    @extend %flex-center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    &-btn {
+        @extend %btn-reset;
+        padding: 8px;
+        transition: 0.3s;
+        border-radius: 3px;
+        background-color: $Light-Grayish-Cyan;
+        color: $Desaturated-Dark-Cyan;
+        font-size: 0.9rem;
+        font-weight: $Font-Bold;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $Desaturated-Dark-Cyan;
+            color: $White;
+        }
+    }
+  }
+}

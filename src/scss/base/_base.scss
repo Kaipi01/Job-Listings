@@ -8,9 +8,12 @@
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     min-height: 100vh;
+    background-color: $Light-Grayish-Cyan-Bg;
     font-family: $Font-Family;
+    font-size: $Font-size;
+    color: $Desaturated-Dark-Cyan;
 }

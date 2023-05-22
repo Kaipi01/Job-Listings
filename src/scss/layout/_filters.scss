@@ -1,0 +1,76 @@
+@use "../utils/variables" as *;
+@use "../utils/flex-center" as *;
+@use "../utils/btn-reset" as *;
+
+.filters {
+  @extend %flex-center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: -35px;
+  padding: 20px 40px;
+  border-radius: 5px;
+  background-color: $White;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  &__active {
+    @extend %flex-center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__category {
+    @extend %flex-center;
+    border-radius: 3px;
+    background-color: $Light-Grayish-Cyan;
+
+    &-name {
+      margin-bottom: -2px;
+      padding: 0 10px;
+    }
+
+    &-remove {
+      @extend %btn-reset;
+      @extend %flex-center;
+      padding: 8px;
+      transition: 0.3s;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      background-color: $Dark-Grayish-Cyan;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $Very-Dark-Grayish-Cyan;
+      }
+    }
+  }
+
+  &__clear {
+    @extend %btn-reset;
+    position: relative;
+    margin-left: 20px;
+    color: $Desaturated-Dark-Cyan;
+    font-size: 1rem;
+    font-weight: $Font-Bold;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0px;
+      height: 1px;
+      transition: 0.3s;
+      background-color: currentColor;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
