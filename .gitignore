@@ -15,3 +15,7 @@
 .DS_Store
 
 notes.txt
+
+design
+node_modules
+dist
