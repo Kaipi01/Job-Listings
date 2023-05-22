@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="../dist/main.css">
-  <script defer src="./js/main.js"></script>
   <title>Frontend Mentor | Job Listings</title>
 </head>
 <body>
@@ -15,99 +14,15 @@
 
   <main class="content">
 
-    <section class="filters">
+    <section class="filters filters--hide">
       <h2 class="visually-hide">Filter a job</h2>
-      <div class="filters__active">
-
-        <div class="filters__category">
-          <p class="filters__category-name">Frontend</p>
-          <button class="filters__category-remove">
-            <span class="visually-hide">Remove this filter</span>
-            <img class="filters__category-remove-icon" src="./images/icon-remove.svg" alt="X" aria-hidden="true">
-          </button>
-        </div>
-
-        <div class="filters__category">
-          <p class="filters__category-name">CSS</p>
-          <button class="filters__category-remove">
-            <span class="visually-hide">Remove this filter</span>
-            <img class="filters__category-remove-icon" src="./images/icon-remove.svg" alt="X" aria-hidden="true">
-          </button>
-        </div>
-
-        <div class="filters__category">
-          <p class="filters__category-name">JavaScript</p>
-          <button class="filters__category-remove">
-            <span class="visually-hide">Remove this filter</span>
-            <img class="filters__category-remove-icon" src="./images/icon-remove.svg" alt="X" aria-hidden="true">
-          </button>
-        </div>
-
-      </div>
+      <div class="filters__active"></div>
       <button class="filters__clear">Clear</button>
     </section>
 
-    <article class="job">
-      <div class="job__content">
-        <img class="job__logo" src="./images/photosnap.svg" alt="photosnap logo">
-        <div class="job__info">
-
-          <div class="job__header">
-            <a class="job__company-name" href="#">Photosnap</a>
-            <span class="job__tag">NEW!</span>
-            <span class="job__tag job__tag--dark">FEATURED</span>
-          </div>
-
-          <h2 class="job__position">
-            <a class="job__position-link" href="#">Senior Frontend Developer</a>
-          </h2>
-
-          <ul class="job__info-list">
-            <li class="job__info-list-item">1d ago</li>
-            <li class="job__info-list-item">Full Time</li>
-            <li class="job__info-list-item">USA only</li>
-          </ul>
-        </div> 
-      </div>
-
-      <div class="job__categories">
-        <button class="job__categories-btn">Frontend</button>
-        <button class="job__categories-btn">Senior</button>
-        <button class="job__categories-btn">HTML</button>
-        <button class="job__categories-btn">CSS</button>
-        <button class="job__categories-btn">JavaScript</button>
-      </div>
-    </article>
-
-    <article class="job">
-      <div class="job__content">
-        <img class="job__logo" src="./images/myhome.svg" alt="myhome logo">
-        <div class="job__info">
-
-          <div class="job__header">
-            <a class="job__company-name" href="#">MyHome</a>
-          </div>
-
-          <h2 class="job__position">
-            <a class="job__position-link" href="#">Junior Frontend Developer</a>
-          </h2>
-
-          <ul class="job__info-list">
-            <li class="job__info-list-item">5d ago</li>
-            <li class="job__info-list-item">Contract</li>
-            <li class="job__info-list-item">USA only</li>
-          </ul>
-        </div> 
-      </div>
-
-      <div class="job__categories">
-        <button class="job__categories-btn">Frontend</button>
-        <button class="job__categories-btn">Junior</button>
-        <button class="job__categories-btn">CSS</button>
-        <button class="job__categories-btn">JavaScript</button>
-      </div>
-    </article>
-
+    <div class="content__jobs"></div>
   </main>
+
+  <script type="module" src="./js/main.js"></script>
 </body>
 </html>
