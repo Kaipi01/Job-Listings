@@ -14,6 +14,10 @@
   background-color: $White;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
+  &--hide {
+    display: none;
+  }
+
   @media (min-width: $Tablet) {
     flex-direction: row;
     align-items: center;
@@ -130,6 +134,7 @@
     @extend %flex-center;
     flex-wrap: wrap;
     justify-content: flex-start;
+    width: 100%;
     padding-top: 15px;
     border-top: 1px solid $Desaturated-Dark-Cyan;
     gap: 15px;
@@ -137,6 +142,7 @@
     @media (min-width: $Tablet) {
       flex-direction: row;
       justify-content: center;
+      width: auto;
       padding-top: 0;
       border-top: none;
     }
@@ -154,6 +160,11 @@
       &:hover,
       &:focus,
       &:active {
+        background-color: $Desaturated-Dark-Cyan;
+        color: $White;
+      }
+
+      &--active {
         background-color: $Desaturated-Dark-Cyan;
         color: $White;
       }

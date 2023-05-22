@@ -16,6 +16,10 @@
     padding: 20px 40px;
   }
 
+  &--hide {
+    display: none;
+  }
+
   &__active {
     @extend %flex-center;
     flex-wrap: wrap;
@@ -41,6 +45,10 @@
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
       background-color: $Dark-Grayish-Cyan;
+
+      & > * {
+        pointer-events: none;
+      }
 
       &:hover,
       &:focus,
