@@ -10,7 +10,6 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-- [Author](#author)
 
 ## Overview
 
@@ -28,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/Kaipi01/Job-Listings
+- Live Site URL: https://kaipi01.github.io/Job-Listings
 
 ## My process
 
@@ -40,7 +39,4 @@ Users should be able to:
 - Flexbox
 - SCSS
 - Mobile-first workflow
-
-## Author
-
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- 
